@@ -1,0 +1,245 @@
+.red {
+  border: 1px solid red; }
+
+.green {
+  border: 1px solid green; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif; }
+  body a {
+    text-decoration: none; }
+
+.container {
+  margin: 0 20px; }
+
+.header {
+  height: 600px;
+  border-bottom: 2px solid #ccc; }
+  .header .top-nav {
+    height: 100px;
+    display: flex;
+    flex-direction: row; }
+    .header .top-nav .logo {
+      width: 20%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px; }
+      .header .top-nav .logo img {
+        margin-left: 10px;
+        height: 70%; }
+      .header .top-nav .logo i {
+        margin-top: 5px;
+        font-size: 28px;
+        opacity: 0.5; }
+    .header .top-nav .intro {
+      width: 60%;
+      display: flex;
+      flex-direction: row; }
+      .header .top-nav .intro .intro-icon {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; }
+        .header .top-nav .intro .intro-icon h3 {
+          margin: 0;
+          font-size: 15px; }
+        .header .top-nav .intro .intro-icon span {
+          padding-top: 5px;
+          font-size: 12px;
+          display: block; }
+    .header .top-nav .support {
+      width: 20%;
+      padding-top: 25px; }
+    .header .top-nav i {
+      padding-right: 5px; }
+  .header .image-nav {
+    height: 400px;
+    margin: 0 -20px;
+    background-image: url("../images/ireland-pitch.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header .image-nav .title-image {
+      color: white;
+      font-size: 35px;
+      margin: 40px 0; }
+    .header .image-nav .btn-search {
+      border-radius: 25px;
+      padding: 10px;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      width: 40%; }
+      .header .image-nav .btn-search .input-search {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: white;
+        padding-left: 10px; }
+  .header .bottom-nav {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+    .header .bottom-nav .bottom-item {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      justify-content: center;
+      align-items: center; }
+      .header .bottom-nav .bottom-item span {
+        padding-top: 5px;
+        display: block; }
+      .header .bottom-nav .bottom-item i {
+        color: #ccc; }
+
+.club-news,
+.fixtures-and-results, .facilities {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #ccc; }
+  .club-news .title-section,
+  .fixtures-and-results .title-section, .facilities .title-section {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row; }
+    .club-news .title-section .span-title,
+    .fixtures-and-results .title-section .span-title, .facilities .title-section .span-title {
+      width: 20%;
+      display: block;
+      font-size: 20px;
+      font-weight: 600; }
+    .club-news .title-section .btn-view,
+    .fixtures-and-results .title-section .btn-view, .facilities .title-section .btn-view {
+      width: 80%;
+      display: flex;
+      flex-direction: row-reverse; }
+      .club-news .title-section .btn-view a,
+      .fixtures-and-results .title-section .btn-view a, .facilities .title-section .btn-view a {
+        border: 1px solid #ccc;
+        background-color: #ccc;
+        height: fit-content;
+        padding: 10px; }
+        .club-news .title-section .btn-view a:hover,
+        .fixtures-and-results .title-section .btn-view a:hover, .facilities .title-section .btn-view a:hover {
+          border: 1px solid #f7d800;
+          background-color: #f7d800; }
+        .club-news .title-section .btn-view a span,
+        .fixtures-and-results .title-section .btn-view a span, .facilities .title-section .btn-view a span {
+          width: 100%;
+          padding: 5px;
+          color: black; }
+          .club-news .title-section .btn-view a span:hover,
+          .fixtures-and-results .title-section .btn-view a span:hover, .facilities .title-section .btn-view a span:hover {
+            color: white; }
+  .club-news .slide,
+  .fixtures-and-results .slide, .facilities .slide {
+    height: 300px; }
+    .club-news .slide .my-slick-slide,
+    .fixtures-and-results .slide .my-slick-slide, .facilities .slide .my-slick-slide {
+      height: 100%;
+      width: 100%; }
+      .club-news .slide .my-slick-slide .div-slide,
+      .fixtures-and-results .slide .my-slick-slide .div-slide, .facilities .slide .my-slick-slide .div-slide {
+        display: flex;
+        flex-direction: column;
+        padding-right: 10px; }
+        .club-news .slide .my-slick-slide .div-slide img,
+        .fixtures-and-results .slide .my-slick-slide .div-slide img, .facilities .slide .my-slick-slide .div-slide img {
+          height: 200px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 360px 220px; }
+        .club-news .slide .my-slick-slide .div-slide .image-slide,
+        .fixtures-and-results .slide .my-slick-slide .div-slide .image-slide, .facilities .slide .my-slick-slide .div-slide .image-slide {
+          height: 200px;
+          background-image: url("../images/ireland-pitch.jpeg");
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 360px 220px; }
+        .club-news .slide .my-slick-slide .div-slide .div-title,
+        .fixtures-and-results .slide .my-slick-slide .div-slide .div-title, .facilities .slide .my-slick-slide .div-slide .div-title {
+          background-color: #f5efef; }
+          .club-news .slide .my-slick-slide .div-slide .div-title span,
+          .fixtures-and-results .slide .my-slick-slide .div-slide .div-title span, .facilities .slide .my-slick-slide .div-slide .div-title span {
+            display: block;
+            text-transform: uppercase;
+            font-size: 20px;
+            padding: 15px; }
+    .club-news .slide .arrow-left,
+    .fixtures-and-results .slide .arrow-left, .facilities .slide .arrow-left {
+      border: 1px solid #ccc;
+      font-size: 30px;
+      padding: 15px;
+      color: #ccc;
+      position: absolute;
+      bottom: 50%;
+      left: -15px;
+      background-color: white;
+      z-index: 1000;
+      cursor: pointer; }
+    .club-news .slide .arrow-right,
+    .fixtures-and-results .slide .arrow-right, .facilities .slide .arrow-right {
+      border: 1px solid #ccc;
+      font-size: 30px;
+      padding: 15px;
+      color: #ccc;
+      position: absolute;
+      bottom: 50%;
+      right: -15px;
+      background-color: white;
+      cursor: pointer; }
+
+.contact {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #e8e8e8; }
+  .contact .left-side {
+    width: 50%;
+    padding-left: 20px; }
+    .contact .left-side .title {
+      display: block;
+      font-size: 40px;
+      margin-top: 30px; }
+    .contact .left-side .second-title {
+      margin-top: 20px;
+      display: block;
+      font-size: 20px; }
+    .contact .left-side .third-title {
+      margin-top: 20px;
+      display: block;
+      font-size: 20px; }
+    .contact .left-side a {
+      display: block;
+      width: fit-content;
+      margin-top: 30px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      cursor: pointer; }
+      .contact .left-side a:hover {
+        background-color: #f7d800; }
+      .contact .left-side a span {
+        font-size: 20px;
+        text-transform: uppercase; }
+  .contact .right-side {
+    width: 50%; }
+
+footer {
+  margin: 0 -20px;
+  height: 50px;
+  text-align: center;
+  background-color: white; }
+  footer span {
+    display: block;
+    padding-top: 10px; }
