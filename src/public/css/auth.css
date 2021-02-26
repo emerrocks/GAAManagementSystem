@@ -44,3 +44,9 @@ button {
     background-color: #f8d7da;
     color: #721c24;
 }
+
+.forgot-password {
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+}

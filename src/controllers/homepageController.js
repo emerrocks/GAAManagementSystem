@@ -16,7 +16,9 @@ const createNewUser = async (req, res) => {
 }
 
 const getLoginPage = (req, res) => {
-  return res.render('auth/login.ejs')
+  return res.render('auth/login.ejs', {
+    errors: req.flash('errors'),
+  })
 }
 
 const getRegisterPage = (req, res) => {
@@ -50,7 +52,7 @@ const handleRegister = async (req, res) => {
       errorsArr.push(item.msg)
     })
     req.flash('errors', errorsArr)
-    return res.render('auth/register.ejs', {
+    return res.render('auth/register.ejs', 'auth/login.ejs', {
       errors: req.flash('errors'),
       form: form,
     })
